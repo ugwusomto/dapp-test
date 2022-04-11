@@ -1,0 +1,327 @@
+@import url(laide.css);
+@import url(bulma/css/bulma.css);
+@import url(bulma/dist/css/bulma-carousel.min.css);
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap');
+@font-face {
+	font-family: Monument Extended;
+	font-style: normal;
+	font-weight: 400;
+	src: url(fonts/MonumentExtended-Regular.woff) format('woff2');
+}
+@font-face {
+	font-family: Shapiro5;
+	font-style: normal;
+	font-weight: 400;
+	src: url(fonts/Shapiro5.otf) format('woff2');
+}
+@font-face {
+	font-family: Shapiro35;
+	font-style: normal;
+	font-weight: 400;
+	src: url(fonts/Shapiro35.otf) format('woff2');
+}
+@font-face {
+	font-family: Shapiro75;
+	font-style: normal;
+	font-weight: 400;
+	src: url(fonts/Shapiro75.otf) format('woff2');
+}
+@font-face {
+	font-family: Shapiro97;
+	font-style: normal;
+	font-weight: 400;
+	src: url(fonts/Shapiro97.otf) format('woff2');
+}
+@font-face {
+	font-family: PP Neue Machina;
+	font-style: normal;
+	font-weight: 400;
+	src: url(fonts/NeueMachina-Regular.otf) format('woff2');
+}
+@import url(https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css);
+@import url(assets/boxicons/css/boxicons.css);
+
+:root {
+	--purple: #bd00ff;
+	--gold: #ffbe00;
+	--ligit-gold: #ffbe00;
+	--middle-color: rgba(245, 162, 39, 0.25);
+}
+
+html,
+body {
+	background-color: black;
+}
+canvas {
+	display: block;
+	vertical-align: bottom;
+}
+.nav-active {
+	display: block !important;
+}
+
+.ripple {
+	/* background-image: radial-gradient(black 30%,#025373 30%,black 10%,#010F34 20%);
+     */
+	/* background-color: white !important; */
+
+	/* background: #0000; */
+	background-image: url('dark.webp');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	/* filter: blur(200px); */
+}
+
+.banner {
+	height: 30rem;
+	width: 100%;
+	margin-top: 10rem !important;
+	/* padding: 1.75rem; */
+}
+
+.purple-shade {
+	position: absolute;
+	width: 535.87px;
+	height: 535.87px;
+	left: 111.87px;
+	top: -11px;
+
+	background: linear-gradient(180deg, #bd00ff 8.65%, #0077ff 100%);
+	filter: blur(300px);
+	transform: rotate(6.2deg);
+}
+.purple-blue {
+	position: absolute;
+	width: 535.87px;
+	height: 535.87px;
+	left: 111.87px;
+	top: -11px;
+	background: linear-gradient(180deg, #bd00ff 8.65%, #0077ff 100%);
+	filter: blur(300px);
+	animation: gradient 5s ease infinite;
+}
+
+.golden-blue {
+	position: absolute;
+	width: 273.77px;
+	height: 223.04px;
+	left: 126.15px;
+	top: 552.34px;
+	background: #ffbe00;
+	filter: blur(300px);
+	transform: rotate(-41.39deg);
+	animation: gradienttwo 5s ease infinite;
+}
+.golden-bottom {
+	position: absolute;
+	width: 273.77px;
+	height: 223.04px;
+	left: 126.15px;
+	top: 552.34px;
+	background: #ffbe00;
+	filter: blur(300px);
+	transform: rotate(-41.39deg);
+}
+
+.center-golden {
+	position: absolute;
+	width: 273.77px;
+	height: 237.58px;
+	left: 546px;
+	top: 416.03px;
+	background: #ffbe00;
+	filter: blur(90px);
+	transform: rotate(-41.39deg);
+}
+.rectangle-inner {
+	position: relative;
+	width: 305px;
+	height: 508px;
+	background-color: transparent;
+}
+
+.rectangle {
+	/* background-image: linear-gradient(to bottom,var(--gold),var(--middle-color)); */
+	position: absolute;
+	width: 420px;
+	height: 630px;
+	left: 532px;
+	top: 121px;
+	background-image: url(assets/banner/1.png);
+	background-repeat: no-repeat;
+}
+
+.purple-blue-shade {
+	position: absolute;
+	width: 587.3px;
+	height: 535.87px;
+	left: 458.87px;
+	top: 267px;
+	background: linear-gradient(180deg, rgba(189, 0, 255, 0) 7.81%, #0077ff 100%);
+	filter: blur(100px);
+	transform: rotate(6.2deg);
+}
+
+.purple-blue-bottom {
+	position: absolute;
+	width: 587.3px;
+	height: 535.87px;
+	left: 458.87px;
+	top: 267px;
+	background: linear-gradient(180deg, #bd00ff 7.81%, #0077ff 100%);
+	filter: blur(300px);
+	transform: rotate(6.2deg);
+}
+
+.img-gif {
+	position: absolute;
+	width: 920.89px;
+	height: 518px;
+	left: 226.06px;
+	top: 121px;
+}
+
+.btn-shell {
+	width: 10rem;
+	height: 46.26px;
+	border: 1.96866px solid #d5a23a;
+	display: flex;
+	color: white;
+	align-items: center;
+	justify-content: center;
+	border-top-right-radius: 15px;
+	border-bottom-left-radius: 15px;
+	font-family: Inter;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 17px;
+	letter-spacing: 0.05em;
+	text-align: center;
+}
+
+.btn-shell2 {
+	display: flex;
+	color: white;
+	align-items: center;
+	justify-content: space-between;
+	font-family: Inter;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 17px;
+	letter-spacing: 0.05em;
+	text-align: center;
+	color: #fff;
+	cursor: pointer;
+}
+
+.modal-isactive {
+	display: block !important;
+}
+
+.logo img {
+	height: 44.89px;
+	width: auto;
+	max-width: unset;
+}
+.intro {
+	position: absolute;
+	width: 1440px;
+	height: 96px;
+	left: 0px;
+	top: 308px;
+
+	font-family: 'Monument Extended';
+	font-style: normal;
+	font-weight: 900;
+	font-size: 88px;
+	line-height: 154%;
+	/* or 136px */
+
+	text-align: center;
+	letter-spacing: -0.08em;
+	text-transform: uppercase;
+
+	color: #ffffff;
+}
+
+.primary-btn {
+	background-color: #2980d0;
+}
+
+.disabled-btn {
+	background-color: #252525;
+}
+
+.mint-btn {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding: 20.2429px 60.7286px;
+
+	width: 207px;
+	height: 57px;
+
+	border-radius: 6.24px;
+}
+.approve-btn {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding: 14.555px 29.11px;
+	width: 207px;
+	height: 57px;
+
+	border-radius: 7.27749px;
+}
+.mint-btn,
+.approve-btn {
+	border: none;
+	outline: none;
+	color: white;
+}
+
+.mint-btn,
+.approve-btn:hover {
+	cursor: pointer;
+}
+
+.is-blue-btn {
+	padding: 8.91043px 17.8209px;
+
+	position: static;
+	width: 148.08px;
+	height: 41.07px;
+	left: 170.73px;
+	top: 18.71px;
+	color: #ffffff;
+	background: #2980d0;
+	border-radius: 4.45521px;
+}
+
+.hero-body {
+	padding: 0 !important;
+}
+@media only screen and (max-width: 768px) {
+	/* .land{
+        padding: 1rem 1rem !important;
+    } */
+	.buy-input-container {
+		width: 228.16px !important;
+	}
+	.mint-btn {
+		width: 107px;
+	}
+	.approve-btn {
+		width: 107px;
+	}
+	#indollar {
+		font-size: 11.8325px !important;
+	}
+}

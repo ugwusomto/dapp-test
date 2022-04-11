@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="description" content="" />
+	<link rel="icon" href="%svelte.assets%/chlz_icon.png" />
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+
+
+	%svelte.head%
+
+	<style>
+		.body {
+			background-image: url("dark.webp");
+			background-image: url("dark.webp"), radial-gradient(black 30%, #025373 30%, black 10%, #010F34 20%);
+			/* fallback */
+		}
+	</style>
+	<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+	<script async src="https://w.appzi.io/w.js?token=PUT3b"></script>
+
+</head>
+
+<body class="body">
+	<div>%svelte.body%</div>
+</body>
+<script src="bulma/dist/js/bulma-carousel.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script
+	src="http://www.jqueryscript.net/demo/jQuery-Plugin-For-Water-Ripple-Animation-ripples/js/jquery.ripples.js"></script>
+<!-- <script src="https://cdn.jsdelivr.net/npm/@walletconnect/browser@1.0.0-beta.46/lib/index.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@walletconnect/qrcode-modal@1.0.0-beta.46/lib/index.min.js"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/@walletconnect/web3-provider@1.7.1/dist/umd/index.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+<script>
+	const jq = window.$;
+	console.log('test');
+	jq(document).ready(function () {
+		jq('.riple').ripples('show');
+	});
+
+</script>
+
+</html>
